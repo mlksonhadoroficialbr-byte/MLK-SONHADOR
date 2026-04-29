@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O PACK QUE O ALGORITMO AMA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --neon-green: #39ff14;
+            --neon-glow: rgba(57, 255, 20, 0.6);
+            --bg-black: #0f0f0f;
+            --white: #ffffff;
+            --gray: #b3b3b3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .header-logo {
+            width: 100%;
+        }
+
+        .header-logo img {
+            width: 100%;
+            display: block;
+            border-bottom: 3px solid var(--neon-green);
+        }
+
+        .live-bar {
+            background: rgba(57, 255, 20, 0.08);
+            border-bottom: 1px solid var(--neon-green);
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .hero-section {
+            padding: 60px 5% 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(32px, 8vw, 60px);
+            font-weight: 900;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            color: var(--neon-green);
+            text-shadow: 0 0 15px var(--neon-glow);
+            animation: pulseGlow 2s infinite ease-in-out;
+        }
+
+        .sub-description {
+            font-size: 18px;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--neon-green);
+            color: black;
+            padding: 20px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 20px;
+            box-shadow: 0 0 20px var(--neon-glow);
+            animation: pulseGlow 1.8s infinite ease-in-out;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px var(--neon-green);
+        }
+
+        .section-results {
+            padding: 60px 5%;
+        }
+
+        .section-results h2 {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 35px;
+            border-left: 6px solid var(--neon-green);
+            padding-left: 15px;
+            color: var(--neon-green);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .res-card {
+            background: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .res-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .rank-badge {
+            display: none;
+        }
+
+        .checkout-box {
+            text-align: center;
+            padding: 80px 5%;
+            background: linear-gradient(180deg, #0f0f0f 0%, #000 100%);
+            border-top: 10px solid #222;
+        }
+
+        .price-tag .old {
+            text-decoration: line-through;
+            color: var(--gray);
+        }
+
+        .price-tag .new {
+            font-size: 70px;
+            font-weight: 900;
+            color: var(--neon-green);
+            text-shadow: 0 0 15px var(--neon-glow);
+        }
+
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 10px var(--neon-glow);
+                text-shadow: 0 0 10px var(--neon-glow);
+            }
+            50% {
+                box-shadow: 0 0 30px var(--neon-green);
+                text-shadow: 0 0 25px var(--neon-green);
+            }
+            100% {
+                box-shadow: 0 0 10px var(--neon-glow);
+                text-shadow: 0 0 10px var(--neon-glow);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .res-card {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .cta-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-logo">
+        <img src="img0.png">
+        <img src="img1.png">
+    </div>
+
+    <div class="live-bar">
+        <span id="online-count">62</span> pessoas visualizando agora
+    </div>
+
+    <main class="hero-section">
+        <h1>O PACK QUE O ALGORITMO AMA</h1>
+        <p class="sub-description">
+            Baixe agora o pack de vídeos prontos e comece a lucrar 100% hoje mesmo.
+        </p>
+        <a href="https://pay.cakto.com.br/f2f3r8e_861181" class="cta-btn">BAIXAR AGORA</a>
+    </main>
+
+    <section class="hero-section">
+        <h1>POSTE E FIQUE COM 100% DO LUCRO</h1>
+
+        <p class="sub-description">Você já tentou vender mas sempre trabalhou muito e ganhou pouco.</p>
+        <p class="sub-description">Faz venda e o dinheiro não é seu. Depende de comissão. Enriquece outras pessoas.</p>
+        <p class="sub-description">Enquanto isso outras pessoas apenas pegam conteúdo pronto, postam e lucram todos os dias.</p>
+        <p class="sub-description">Você pega o conteúdo, posta, vende e fica com todo o lucro.</p>
+        <p class="sub-description">Esse pack é fechado e não terá atualizações futuras.</p>
+    </section>
+
+    <section class="section-results">
+        <h2>Resultados de quem está vendendo e lucrando 100%</h2>
+
+        <div class="results-grid">
+            <div class="res-card"><img src="img2.png"></div>
+            <div class="res-card"><img src="img3.png"></div>
+            <div class="res-card"><img src="img4.png"></div>
+            <div class="res-card"><img src="img5.png"></div>
+            <div class="res-card"><img src="img6.png"></div>
+        </div>
+
+        <div class="results-grid">
+            <div class="res-card"><img src="img7.png"></div>
+            <div class="res-card"><img src="img8.png"></div>
+            <div class="res-card"><img src="img9.png"></div>
+            <div class="res-card"><img src="img10.png"></div>
+            <div class="res-card"><img src="img11.png"></div>
+        </div>
+    </section>
+
+    <section class="checkout-box">
+        <h2>COMECE O DOWNLOAD IMEDIATAMENTE</h2>
+
+        <div class="price-tag">
+            <span class="old">De R$ 57,99 por</span>
+            <span class="new">R$ 12,99</span>
+        </div>
+
+        <a href="https://pay.cakto.com.br/f2f3r8e_861181" class="cta-btn">BAIXAR AGORA</a>
+
+        <p style="margin-top: 20px; font-size: 13px; color: var(--gray);">
+            Acesso vitalício • Sem atualizações futuras • Download imediato
+        </p>
+    </section>
+
+    <script>
+        setInterval(() => {
+            const el = document.getElementById('online-count');
+            let count = parseInt(el.innerText);
+            el.innerText = count + (Math.floor(Math.random() * 3) - 1);
+        }, 4000);
+    </script>
+
+</body>
+</html>
